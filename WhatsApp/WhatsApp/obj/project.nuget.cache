@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "+uGb5aKgOlIBRi2nH+TFcTYefyiVFnUUpVDyGxgQbzsc4sfROTH3qARYoReJjHev0WbP3JL2c3E5wTJwvVFqnQ==",
+  "success": true,
+  "projectFilePath": "C:\\IntegracaoWhatsAppC#\\WhatsApp\\WhatsApp\\WhatsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinicius\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
