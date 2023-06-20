@@ -1,10 +1,13 @@
-﻿using RestSharp;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using Newtonsoft.Json.Linq;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace WhatsApp
 {
@@ -148,128 +151,103 @@ namespace WhatsApp
         /// <returns></returns>
         private static string MontaCorpoRequisicao(string numeroPessoa, bool temVariaveis, bool temBotao, string templateMensagem, eTipoCabecalho tipoCabecalho, string varCabecalho = "", string varCorpo = "", string linkArquivo = "", string nomeArquivo = "")
         {
-            string body = "";
-            bool temCabecalho = false, temVarCorpo = false;
-            string[] variaveisCabecalho = varCabecalho.Split(','), variaveisCorpo = varCorpo.Split(',');
+            JObject json = new JObject();
 
-            body = "{" +
-                    "\"messaging_product\": \"whatsapp\"," +
-                    $"\"to\": \"{numeroPessoa}\"," +
-                    "\"type\": \"template\"," +
-                    "\"template\": {" +
-                    $"\"name\": \"{templateMensagem}\"," +
-                    "\"language\": {" +
-                    "\"code\": \"pt_BR\"" +
-                    "}";
+            json.Add("messaging_product", "whatsapp");
+            json.Add("to", numeroPessoa);
+            json.Add("type", "template");
+
+            JObject template = new JObject();
+            template.Add("name", templateMensagem);
+
+            JObject language = new JObject();
+            language.Add("code", "pt_BR");
+            template.Add("language", language);
 
             if (temVariaveis)
             {
-                body += "," +
-                    "\"components\": [";
+                JArray components = new JArray();
 
                 if (tipoCabecalho == eTipoCabecalho.Documento)
                 {
-                    temCabecalho = true;
-                    body +=
-                        "{" +
-                        "    \"type\": \"header\"," +
-                        "    \"parameters\": [" +
-                        "        {" +
-                        "            \"type\": \"document\"," +
-                        "            \"document\": {" +
-                        $"                \"filename\": \"{nomeArquivo}\"," +
-                        $"                \"link\": \"{linkArquivo}\"" +
-                        "            }" +
-                        "        }" +
-                        "    ]" +
-                        "}";
+                    JObject header = new JObject();
+                    JArray parameters = new JArray();
+
+                    JObject document = new JObject();
+                    document.Add("filename", nomeArquivo);
+                    document.Add("link", linkArquivo);
+
+                    parameters.Add(new JObject(new JProperty("type", "document"), new JProperty("document", document)));
+                    header.Add("type", "header");
+                    header.Add("parameters", parameters);
+
+                    components.Add(header);
                 }
                 else if (tipoCabecalho == eTipoCabecalho.Texto)
                 {
-                    if (variaveisCabecalho?.Length > 0)
+                    if (!string.IsNullOrEmpty(varCabecalho))
                     {
-                        temCabecalho = true;
+                        JObject header = new JObject();
+                        JArray parameters = new JArray();
 
-                        body +=
-                            "{" +
-                            "  \"type\": \"header\"," +
-                            "  \"parameters\": [";
-
-                        for (int i = 0; i < variaveisCabecalho?.Length; i++)
+                        foreach (var var in varCabecalho.Split(","))
                         {
-                            body +=
-                        "{" +
-                        "   \"type\": \"text\"," +
-                        $"  \"text\": \"{variaveisCabecalho[i]}\"" +
-                        "}";
-
-                            if (i + 1 <= variaveisCabecalho?.Length - 1)
-                            {
-                                body += ",";
-                            }
+                            JObject parameter = new JObject();
+                            parameter.Add("type", "text");
+                            parameter.Add("text", var);
+                            parameters.Add(parameter);
                         }
 
-                        body += "]" + "}";
+                        header.Add("type", "header");
+                        header.Add("parameters", parameters);
+
+                        components.Add(header);
                     }
                 }
 
-                if (variaveisCorpo?.Length > 0)
+                if (!string.IsNullOrEmpty(varCorpo))
                 {
-                    temVarCorpo = true;
-                    if (temCabecalho)
+                    JObject body = new JObject();
+                    JArray parameters = new JArray();
+
+                    foreach (var var in varCorpo.Split(","))
                     {
-                        body += ",";
+                        JObject parameter = new JObject();
+                        parameter.Add("type", "text");
+                        parameter.Add("text", var);
+                        parameters.Add(parameter);
                     }
 
-                    body +=
-                        "{" +
-                        "    \"type\": \"body\"," +
-                        "    \"parameters\": [";
+                    body.Add("type", "body");
+                    body.Add("parameters", parameters);
 
-                    for (int i = 0; i < variaveisCorpo?.Length; i++)
-                    {
-                        body +=
-                        "{" +
-                        "   \"type\": \"text\"," +
-                        $"  \"text\": \"{variaveisCorpo[i]}\"" +
-                        "}";
-
-                        if (i + 1 <= variaveisCorpo?.Length - 1)
-                        {
-                            body += ",";
-                        }
-                    }
-
-                    body += "]" + "}";
+                    components.Add(body);
                 }
 
                 if (temBotao)
                 {
-                    if (temVarCorpo)
-                    {
-                        body += ",";
-                    }
+                    JObject button = new JObject();
+                    JArray parameters = new JArray();
 
-                    body +=
-                        "{" +
-                        "   \"type\": \"button\"," +
-                        "   \"sub_type\": \"url\"," +
-                        "   \"index\": \"0\"," +
-                        "   \"parameters\": [" +
-                        "      {" +
-                        "        \"type\": \"text\"," +
-                        $"       \"text\": \"{linkArquivo}\"" +
-                        "      }" +
-                        "     ]" +
-                        "}";
+                    JObject parameter = new JObject();
+                    parameter.Add("type", "text");
+                    parameter.Add("text", linkArquivo);
+                    parameters.Add(parameter);
+
+                    button.Add("type", "button");
+                    button.Add("sub_type", "url");
+                    button.Add("index", "0");
+                    button.Add("parameters", parameters);
+
+                    components.Add(button);
                 }
 
-                body += "]";
+                template.Add("components", components);
             }
 
-            body += "}" + "}";
+            json.Add("template", template);
 
-            return body;
+            return json.ToString();
         }
 
         /// <summary>
