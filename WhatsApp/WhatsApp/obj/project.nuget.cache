@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WxjwFqn/IVYCRfG3Ax2wgmZSSQLh0bAIZ3/p0ut/+do+UFcuuJtFqGP7njgoN0O3LwDfcXBZ20v0VN2pSnsMbg==",
+  "dgSpecHash": "0d4SpXM1hy16p6s7zBnhRY8Poz+oQfROW9PRUtBSQmT1/9wF1PELxoL7Fr6F1wnzhSifSnM9n5GoWIQQ8wmPeA==",
   "success": true,
-  "projectFilePath": "C:\\IntegracaoWhatsAppC#\\WhatsApp\\WhatsApp\\WhatsApp.csproj",
+  "projectFilePath": "C:\\Users\\Vinicius\\Desktop\\Whatsapp c#\\whatsapp_api_oficial\\WhatsApp\\WhatsApp\\WhatsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinicius\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",

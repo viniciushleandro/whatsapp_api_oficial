@@ -1,0 +1,11 @@
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\WebHook.exe
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\WebHook.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\WebHook.deps.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\WebHook.runtimeconfig.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\WebHook.pdb
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WebHook\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

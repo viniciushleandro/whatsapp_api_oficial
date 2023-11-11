@@ -20,3 +20,27 @@ C:\IntegracaoWhatsAppC#\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\refint\WhatsA
 C:\IntegracaoWhatsAppC#\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.pdb
 C:\IntegracaoWhatsAppC#\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.genruntimeconfig.cache
 C:\IntegracaoWhatsAppC#\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\ref\WhatsApp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\WhatsApp.exe
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\WhatsApp.deps.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\WhatsApp.runtimeconfig.json
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\WhatsApp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\WhatsApp.pdb
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\RestSharp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.csproj.AssemblyReference.cache
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.FrmWhatsApp.resources
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.csproj.GenerateResource.cache
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.AssemblyInfoInputs.cache
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.AssemblyInfo.cs
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.csproj.CopyComplete
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\refint\WhatsApp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.pdb
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.genruntimeconfig.cache
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\ref\WhatsApp.dll
+C:\Users\Vinicius\Desktop\Whatsapp c#\whatsapp_api_oficial\WhatsApp\WhatsApp\obj\Debug\net6.0-windows\WhatsApp.FrmChat.resources
